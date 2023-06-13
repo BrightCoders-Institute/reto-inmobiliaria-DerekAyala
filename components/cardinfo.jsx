@@ -5,8 +5,8 @@ import Card from './card'
 
 
 const CardInfo = () => {
-    const renderCard = ({item} )=> (
-        <card
+    const renderCard = ({item} ) => (
+        <Card
           nombre={item.nombre}
           direccion={item.direccion}
           habitaciones={item.habitaciones}
@@ -19,7 +19,6 @@ const CardInfo = () => {
 
     return (
       <FlatList
-        style={styles.container}
         data={properties.propiedades }
         keyExtractor={(item => item.id.toString())}
         renderItem={renderCard}
