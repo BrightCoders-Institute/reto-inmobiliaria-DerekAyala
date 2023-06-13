@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native';
 import {Ionicons} from 'react-native-vector-icons/Ionicons';
 import {MaterialCommunityIcons} from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const card = ({
+const Card = ({
   nombre,
   direccion,
   habitaciones,
@@ -14,7 +14,7 @@ const card = ({
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-      <View style={styles.Container}>
+      <View style={styles.container}>
         <View style={styles.row}>
           <View style={styles.imageContainer}>
             <Image
@@ -55,11 +55,31 @@ const card = ({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#e5e5e5',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    paddingTop: Platform.OS === 'android' ? StatusBarManager.HEIGHT : 0,
-  }
+  },
+  row: {
+    
+  },
+  imageContainer: {
+  
+  },
+  img: {
+
+  },
+  infoContainer: {
+ 
+  },
+  title: {
+ 
+  },
+  iconText: {
+   
+  },
+  icon: {
+
+  },
+  address: {
+
+  },
 });
 
-export default card;
+export default Card;
