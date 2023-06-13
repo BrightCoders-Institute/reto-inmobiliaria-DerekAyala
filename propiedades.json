@@ -1,0 +1,64 @@
+{
+  "propiedades": [
+    {
+      "id": "1",
+      "nombre": "The Willows",
+      "direccion": "3517 W. Gray St. Utica",
+      "habitaciones": "3",
+      "baños": "2",
+      "superficie": "230 ft²",
+      "renta": "$440/m",
+      "calificacion": "4.7"
+    },
+    {
+      "id": "2",
+      "nombre": "Ochard House",
+      "direccion": "3517 W. Gray St. Utica",
+      "habitaciones": "3",
+      "baños": "2",
+      "superficie": "230 ft²",
+      "renta": "$440/m",
+      "calificacion": "4.7"
+    },
+    {
+      "id": "3",
+      "nombre": "Ochard House",
+      "direccion": "3517 W. Gray St. Utica",
+      "habitaciones": "3",
+      "baños": "2",
+      "superficie": "230 ft²",
+      "renta": "$440/m",
+      "calificacion": "4.7"
+    },
+    {
+      "id": "4",
+      "nombre": "The Willows",
+      "direccion": "3517 W. Gray St. Utica",
+      "habitaciones": "3",
+      "baños": "2",
+      "superficie": "230 ft²",
+      "renta": "$440/m",
+      "calificacion": "4.7"
+    },
+    {
+      "id": "5",
+      "nombre": "Corner House",
+      "direccion": "3517 W. Gray St. Utica",
+      "habitaciones": "3",
+      "baños": "2",
+      "superficie": "230 ft²",
+      "renta": "$440/m",
+      "calificacion": "4.7"
+    },
+    {
+      "id": "6",
+      "nombre": "Penthouse",
+      "direccion": "3517 W. Gray St. Utica",
+      "habitaciones": "3",
+      "baños": "2",
+      "superficie": "230 ft²",
+      "renta": "$440/m",
+      "calificacion": "4.7"
+    }
+  ]
+}
