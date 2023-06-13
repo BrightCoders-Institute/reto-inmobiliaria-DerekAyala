@@ -1,10 +1,10 @@
 import React from 'react';
 import { FlatList, StyleSheet } from 'react-native';
 import properties from '../propiedades.json'
-import card from './card'
+import Card from './card'
 
 
-const cardinfo = () => {
+const CardInfo = () => {
     const renderCard = ({item} )=> (
         <card
           nombre={item.nombre}
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
   
 });
 
-export default cardinfo;
+export default CardInfo;
