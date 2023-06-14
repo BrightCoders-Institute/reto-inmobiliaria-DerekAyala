@@ -36,7 +36,7 @@ Follow these steps to install and run the application:
 
 1. Clone this repository to your local machine: git clone https://github.com/YourUsername/YourRepository.git
 
-2. Navigate to the project directory:
+2. Navigate to the project directory: cd reto-inmobiliaria-DerekAyala
 
 3. Install the necessary dependencies using npm or yarn:
 
