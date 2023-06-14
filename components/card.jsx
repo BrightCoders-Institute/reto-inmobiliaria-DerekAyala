@@ -2,10 +2,9 @@ import React from 'react';
 import {
   Text, View, Image,
 } from 'react-native';
-import Ionicons from '@expo/vector-icons/Ionicons';
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import PropTypes from 'prop-types';
 import styles from '../styles/styles';
+import IconText from './icontext';
 
 function Card({
   nombre,
@@ -26,28 +25,13 @@ function Card({
         </View>
         <View style={styles.info}>
           <Text style={[styles.title, styles.bold]}>{nombre}</Text>
-          <View style={styles.iconText}>
-            <Ionicons name="location-outline" size={20} color="#8a8c8d" />
-            <Text style={[styles.text, styles.gray]}>{direccion}</Text>
-          </View>
+          <IconText ViewStyle={[styles.iconText]} icon="map-marker-outline" text={direccion} textStyles={[styles.text, styles.gray]} size={20} color="#8a8c8d" />
           <View style={styles.row}>
-            <View style={styles.iconText}>
-              <Ionicons name="bed-outline" size={20} color="#8a8c8d" />
-              <Text style={[styles.text, styles.bold]}>{habitaciones}</Text>
-            </View>
-            <View style={styles.iconText}>
-              <MaterialCommunityIcons name="bathtub-outline" size={20} color="#8a8c8d" />
-              <Text style={[styles.text, styles.bold]}>{baños}</Text>
-            </View>
-            <View style={styles.iconText}>
-              <MaterialCommunityIcons name="set-square" size={20} color="#8a8c8d" />
-              <Text style={[styles.text, styles.bold]}>{superficie}</Text>
-            </View>
+            <IconText ViewStyle={[styles.iconText]} icon="bed-king-outline" text={habitaciones} textStyles={[styles.text, styles.bold]} size={20} color="#8a8c8d" />
+            <IconText ViewStyle={[styles.iconText]} icon="bathtub-outline" text={baños} textStyles={[styles.text, styles.bold]} size={20} color="#8a8c8d" />
+            <IconText ViewStyle={[styles.iconText]} icon="set-square" text={superficie} textStyles={[styles.text, styles.bold]} size={20} color="#8a8c8d" />
           </View>
-          <View style={styles.row}>
-            <Text style={[styles.title, styles.bold]}>{renta}</Text>
-            <MaterialCommunityIcons style={styles.icon} name="cards-heart" size={16} color="#fff" />
-          </View>
+          <IconText ViewStyle={[styles.row, styles.rowReverse]} iconStyle={styles.icon} icon="cards-heart" text={renta} textStyles={[styles.title,styles.bold]} size={16} color="#fff" />
         </View>
       </View>
     </View>
