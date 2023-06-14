@@ -4,6 +4,7 @@ import {
 } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import PropTypes from 'prop-types';
 import styles from '../styles/styles';
 
 function Card({
@@ -52,5 +53,14 @@ function Card({
     </View>
   );
 }
+
+Card.propTypes = {
+  nombre: PropTypes.string.isRequired,
+  direccion: PropTypes.string.isRequired,
+  habitaciones: PropTypes.string.isRequired,
+  baños: PropTypes.string.isRequired,
+  superficie: PropTypes.string.isRequired,
+  renta: PropTypes.string.isRequired,
+};
 
 export default Card;
