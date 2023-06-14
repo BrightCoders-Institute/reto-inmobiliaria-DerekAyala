@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 const Card = ({
   nombre,
@@ -17,24 +19,29 @@ const Card = ({
             style= {styles.img}
             source={ {uri: 'https://www.smartertravel.com/wp-content/uploads/2014/09/stm540f217ac5b9d20140909.jpg'}}/>
         </View>
-        <View>
-          <Text style={styles.title}>{nombre}</Text>
+        <View style={styles.info}>
+          <Text style={[styles.title, styles.bold]}>{nombre}</Text>
           <View style={styles.iconText}>
-            <Text style={styles.address}>{direccion}</Text>
+            <Ionicons name="location-outline" size={20} color="#8a8c8d"/>
+            <Text style={[styles.text,{color:'#8a8c8d'}]}>{direccion}</Text>
           </View>
           <View style={styles.row}>
             <View style={styles.iconText}>
-              <Text style={styles.text}>{habitaciones}</Text>
+              <Ionicons name="bed-outline" size={20} color="#8a8c8d"/>
+              <Text style={[styles.text, styles.bold]}>{habitaciones}</Text>
             </View>
             <View style={styles.iconText}>
-              <Text style={styles.text}>{baños}</Text>
+              <MaterialCommunityIcons name="bathtub-outline" size={20} color="#8a8c8d"/>
+              <Text style={[styles.text, styles.bold]}>{baños}</Text>
             </View>
             <View style={styles.iconText}>
-              <Text style={styles.text}>{superficie}</Text>
+              <MaterialCommunityIcons name="set-square" size={20} color="#8a8c8d"/>
+              <Text style={[styles.text, styles.bold]}>{superficie}</Text>
             </View>
           </View>
           <View style={[styles.row]}>
-            <Text style={styles.text}>{renta}</Text>
+            <Text style={[styles.title, styles.bold]}>{renta}</Text>
+            <MaterialCommunityIcons style={styles.icon} name="cards-heart" size={16} color="#fff"/>
           </View>
         </View>
       </View>
@@ -53,28 +60,44 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    alignItems: 'center'
   },
   img: {
-    width: 100,
+    width: 110,
     height: 100,
     borderRadius: 10,
   },
   infoContainer: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
+    columnGap: 15
+  },
+  iconText:{
+    flexDirection: 'row',
     columnGap: 10,
   },
+  info:{
+    flex: 1,
+    justifyContent: 'space-between'
+  },
   title: {
-    fontWeight: '500',
     fontSize: 20
   },
-  text:{
+  bold:{
     fontWeight: '500',
-    fontSize: 15,
+  },
+  text:{
+    fontSize: 14,
   },
   address: {
     color: '#8a8c8d',
   },
+  icon:{
+    backgroundColor: '#00b074',
+    padding: 5,
+    borderRadius: 15
+  }
 });
 
 export default Card;
