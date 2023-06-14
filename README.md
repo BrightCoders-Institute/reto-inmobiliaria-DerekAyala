@@ -34,9 +34,7 @@ This is a single-page application that showcases properties from a real estate a
 
 Follow these steps to install and run the application:
 
-1. Clone this repository to your local machine:
-
-git clone https://github.com/YourUsername/YourRepository.git
+1. Clone this repository to your local machine: git clone https://github.com/YourUsername/YourRepository.git
 
 2. Navigate to the project directory:
 
