@@ -46,6 +46,11 @@ npm install or yarn install
 
 expo start
 
+## Badges
+
+### Codeclimate qualification badge
+<a href="https://codeclimate.com/github/BrightCoders-Institute/reto-inmobiliaria-DerekAyala/maintainability"><img src="https://api.codeclimate.com/v1/badges/2d9f575373a44e4a9d2b/maintainability" /></a>
+
 ## Credits
 
 - Developed by [Derek Ayala](https://github.com/DerekAyala)
